@@ -1,0 +1,139 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fefaf6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Navigation */
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+  
+  nav .icons {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+  }
+
+  nav .icons img {
+    width: 40px;
+    height: 30px;
+  }
+
+
+
+
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 50px;
+  }
+  
+  .content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    color: #5a5a5a;
+    margin-top: 10px;
+  }
+  
+  .eye-icon img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -150px;
+    right: 150px;
+  }
+  
+  /* Background Shapes */
+  .shape {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #d8d9f1;
+    border-radius: 20%;
+  }
+  
+  .shape1 {
+    top: 10%;
+    left: 5%;
+    background-color: #f1d8d9;
+  }
+  
+  .shape2 {
+    bottom: 10%;
+    right: 10%;
+    background-color: #d9f1d8;
+  }
+  
+  .shape3 {
+    top: 70%;
+    left: 60%;
+    background-color: #d8d8f1;
+  }
+  
+  .shape4 {
+    bottom: 5%;
+    left: 80%;
+    background-color: #f1e1d9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+    }
+  
+    .content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .eye-icon img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
